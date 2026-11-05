@@ -12,6 +12,9 @@
 | `npm run build` | 통과 | Next 프로덕션 빌드. `/` 정적, `/api/translate` 서버 Route |
 | `npm audit` | 0건 | 전체 의존성, 개발 도구 포함 |
 | `.env.local` | Git 제외 확인 | `.env.example`만 커밋 대상으로 유지 |
+| GitHub Actions CI | 통과 | [실행 기록](https://github.com/improvv/PaperLingo/actions/runs/42063279990): Ubuntu에서 `npm ci`, lint, 32개 단위 테스트, 프로덕션 빌드 통과 |
+
+API 키가 소스 / 테스트 / 문서 / staging에 포함되지 않았으며, 생성된 `.next/static` 클라이언트 번들에서도 키 값이 검색되지 않음을 확인했습니다.
 
 ## 실제 외부 연동 (`npm run test:live`)
 
